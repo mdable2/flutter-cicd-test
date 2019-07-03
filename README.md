@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+## Important Links
+1. [Cydia Impactor](http://www.cydiaimpactor.com/)
+2. [CI/CD with Codemagic](https://medium.com/flutter-community/developing-and-debugging-flutter-apps-for-ios-without-a-mac-8d362a8ec667)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
