@@ -9,6 +9,9 @@
 .history
 .svn/
 
+# Settings and config
+.settings
+
 # IntelliJ related
 *.iml
 *.ipr
