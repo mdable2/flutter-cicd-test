@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import '../beer_list/beer_list.dart';
+import '../camera//camera.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -13,7 +14,7 @@ class HomePageState extends State<HomePage> {
   int selectedIndex = 0;
   final widgetOptions = [
     new BeerListPage(),
-    Text('Add new beer'),
+    new CameraWidget(),
     Text('Favourites'),
   ];
 
