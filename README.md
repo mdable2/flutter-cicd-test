@@ -1,6 +1,6 @@
-# flutter_hello_world
+# flutter_basic_beer_app
 
-A new Flutter project.
+[A new Flutter project based on this post](https://blog.brainsandbeards.com/how-to-add-camera-support-to-a-flutter-app-c1dfd6b78823)
 
 ## Important Links
 
