@@ -1,25 +1,7 @@
 import 'dart:convert';
-import 'dart:io';
-
-import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
-
 import 'package:flutter/foundation.dart';
-import 'package:flutter_hello_world/screens/camera/camera.dart';
 
-class CameraState extends State<CameraWidget> {
-  final GlobalKey<ScaffoldState> scaffoldKey= GlobalKey<ScaffoldState>();
-  CameraController controller;
-  
-  // Variables for keeping state and image path for camera operations
-  bool isReady = false;
-  bool showCamera = true;
-  String imagePath;
-}
-Future<String> takePicture() async {
-  final Directory extDir = await getApplicationDocumentsDirectory();
-}
 class BeerListPage extends StatefulWidget {
   BeerListPage({Key key}) : super(key: key);
 
