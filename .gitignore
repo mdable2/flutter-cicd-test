@@ -12,6 +12,10 @@
 # Settings and config
 .settings
 
+# Google Firebase Setting Files
+google-services.json
+GoogleService-Info.plist
+
 # IntelliJ related
 *.iml
 *.ipr

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' show join;
+import 'package:firebase_storage/firebase_storage.dart';
 
 /********** TODO: Added...finish taking picture save image path logic
 class CameraState extends State<CameraWidget> {
@@ -85,6 +86,13 @@ class CameraState extends State<CameraWidget> {
 
             // Attempt to take a picture and log where it's been saved
             await controller.takePicture(path);
+
+            // Upload image to Firebase Storage
+            final StorageReference storageRef = FirebaseStorage.instance.ref().child(path);
+            final StorageUploadTask uploadTask = storageRef.putFile(File(path));
+            final StorageTaskSnapshot downloadUrl = (await uploadTask.onComplete);
+            final String url = (await downloadUrl.ref.getDownloadURL());
+            print("URL is $url");
 
             // If picture was taken, display it on a new screen
             Navigator.push(
