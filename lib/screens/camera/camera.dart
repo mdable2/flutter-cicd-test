@@ -71,8 +71,7 @@ class CameraState extends State<CameraWidget> {
         child: Icon(Icons.camera_alt),
         // Provide an onPressed callback
         onPressed: () async {
-          // Take the Picture in a try / catch block. If anything goes wrong
-          // catch the error
+          // Take the Picture in a try / catch block
           try {
             // TODO: might need to initialzie a controllerFuture as in here: https://flutter.dev/docs/cookbook/plugins/picture-using-camera
 
