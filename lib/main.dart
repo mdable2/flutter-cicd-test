@@ -1,5 +1,7 @@
 /* FOLLOWING THIS TUTORIAL: https://blog.brainsandbeards.com/bottom-navigation-with-a-list-screen-in-flutter-d517dc6f22f1 */
 
+import 'package:flutter_hello_world/services/loader.dart';
+
 import 'screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
